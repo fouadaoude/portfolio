@@ -1,4 +1,77 @@
-body{
-    background-image:               url(images/playharder.jpg);
+body, html{
+    height:                         100%;
+}
+ul{
+    list-style-type:                none;
+    margin:                         0;
+    padding:                        0;
+    overflow:                       hidden;
+    background-color:               #333;
+}
+li{
+    float:                          left;
+}
+li a{
+    display:                        block;
+    color:                          white;
+    text-align:                     center;
+    padding:                        14px 16px;
+    text-decoration:                none;
+}
+li a:hover{
+    background-color:               #111;
+}
+.active{
+    background-color:               red;
+}
+.img{
+    background-image:               url(images/city.jpg);
+    border:                         none;
+    background-position:            center;
+    background-repeat:              no-repeat;
     background-size:                cover;
+}
+.center{
+    font-family:                    Consolas;
+    position:                       relative;
+    top:                            750px;
+    left:                           auto;
+    color:                          white;
+    text-align:                     center;     
+    background:                     black;    
+    width:                          300px;
+    font-size:                      10px;
+}
+@media screen and (min-width: 601px){
+    div.center{
+        font-size:                      20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.center{
+        font-size:                      30px;
+    }
+}
+.about{
+    font-family:                    Consolas;
+    position:                       relative;
+    top:                            30px;
+    left:                           40%;
+    color:                          white;
+    text-align:                     center;     
+    background:                     black;    
+    width:                          300px;
+    font-size:                      10px;
+}
+@media screen and (min-width: 601px){
+    div.about{
+        font-size:                      15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.about{
+        font-size:                      20px;
+    }
 }
