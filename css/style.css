@@ -1,12 +1,23 @@
 body, html{
-    height:                         100%;
+    margin:                         0;
+    height:                         auto;
+    background-color:               rgb(159, 179, 179);
+    /*overflow-y:                     auto;*/
+}
+.img{
+    background:                     url(images/city.jpg);
+    background-size:                cover;
+    background-repeat:              no-repeat;
+    background-position:            center;
+    background-attachment:          fixed;
+    position:                       relative;
+    width:                          100%;
+    height:                         600px;
 }
 ul{
     list-style-type:                none;
     margin:                         0;
     padding:                        0;
-    overflow:                       hidden;
-    background-color:               #333;
 }
 li{
     float:                          left;
@@ -19,28 +30,22 @@ li a{
     text-decoration:                none;
 }
 li a:hover{
+    background-color:               #282828;
+}
+.caption{
+    position:                       absolute;
+    left:                           0;
+    top:                            25%;
+    width:                          100%;
+    text-align:                     center;
+    color:                          #000;
+}
+.caption span.border{
     background-color:               #111;
-}
-.active{
-    background-color:               red;
-}
-.img{
-    background-image:               url(images/city.jpg);
-    border:                         none;
-    background-position:            center;
-    background-repeat:              no-repeat;
-    background-size:                cover;
-}
-.center{
-    font-family:                    Consolas;
-    position:                       relative;
-    top:                            750px;
-    left:                           auto;
-    color:                          white;
-    text-align:                     center;     
-    background:                     black;    
-    width:                          300px;
-    font-size:                      10px;
+    color:                          #fff;
+    padding:                        18px;
+    font-size:                      25px;
+    letter-spacing:                 10px;;
 }
 @media screen and (min-width: 601px){
     div.center{
@@ -49,29 +54,34 @@ li a:hover{
 }
 
 @media screen and (max-width: 600px){
-    div.center{
+    .center{
         font-size:                      30px;
     }
 }
-.about{
-    font-family:                    Consolas;
-    position:                       relative;
-    top:                            30px;
-    left:                           40%;
-    color:                          white;
-    text-align:                     center;     
-    background:                     black;    
-    width:                          300px;
+.about_header{
+    font-family:                    comic sans ms, cursive, sans-serif;
+    position:                       absolute;
+    top:                            600px;
+    left:                           20%;
+    color:                          black;
+    width:                          200px;
     font-size:                      10px;
 }
+.about_me{
+    font-family:                    comic sans ms, cursive, sans-serif;
+    position:                       absolute;
+    top:                            650px;
+    left:                           2%;
+}
+
 @media screen and (min-width: 601px){
-    div.about{
-        font-size:                      15px;
+    .about_header{
+        font-size:                      12px;
     }
 }
 
 @media screen and (max-width: 600px){
-    div.about{
+    .about_header{
         font-size:                      20px;
     }
 }
