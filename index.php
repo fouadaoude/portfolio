@@ -4,18 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="jquery-3.4.0.min.js"></script>
+    <script src="scripts/navbar.js"></script>
     <title>Fouad Aoude</title>
 </head>
 <body>
-    <div class="img">
-    <ul style="position: fixed;">
+<nav>
+    <ul>
+    <button><b> ✖ </b></button>
+    <script>
+            $("document").ready(function()){
+                $("button").click(function()){
+                    if($("button").text() == "☰"){
+                        $("button").text("✖");
+                    }
+                    else{        
+                        $("button").text("☰");      
+                    }
+                
+                $("li").toggle("slow");
+                });
+            });
+    <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About Me</a></li>
         <li><a href="#">Contact Me</a></li>
         <li><a href="#">Login</a></li>
-        <li style="float:right"><a href="#">Register</a></li>
-    </ul style>
-    </div>
+        <li><a href="#">Register</a></li>
+    </ul>
+    </script>
+</nav>
+    <div class="img"></div>
     <div class="caption">
         <span class="border">Fouad Aoude</span>
         <span class="border">Computer Science Student</span>
