@@ -1,109 +1,42 @@
-body, html{
-    margin:                         0;
-    height:                         auto;
-    background-color:               rgb(159, 179, 179);
-    /*overflow-y:                     auto;*/
+.background-index{
+    background:         url(images/tree.jpg);
+    background-size:    cover;
+    background-repeat:  no-repeat;
+    background-position:center;
+    position:           relative;
+    top:                46px;
+    width:              100%;
+    height:             600px;
 }
-.img{
-    background:                     url(images/city.jpg);
-    background-size:                cover;
-    background-repeat:              no-repeat;
-    background-position:            center;
-    background-attachment:          fixed;
-    position:                       relative;
-    width:                          100%;
-    height:                         600px;
-}
-nav{
-    width:                          100vw;
-    background-color:               #D6EFFF;
-}
-li{
-    list-style-type:                none;
-    margin:                         2vw 0;
-    font-size:                      3vh;
-}
-a{
-    text-decoration:                none;
-    color:                          black;
-    font-family:                    monospace;
-    padding:                        2vw;
-}
-a:hover{
-    background-color:               #C6E9FF;
+.about-me{
+    font-family:        comic sans ms;
+    top:                20px;
+    right:              20%;
 }
 body{
-    margin:                         0;
+    margin:             0;
+    background-color:   #C38D9E;
 }
 ul{
-    display:                        block;
-    margin:                         0;
-    padding:                        0;
-    display:                        flex;
+    list-style-type:    none;
+    margin:             0;
+    padding:            0;
+    background-color:   #333;
+    position:           fixed;
+    top:                0;
+    width:              100%;
 }
-button{
-    display:                        none;
+li{
+    float:              left;
 }
-.caption{
-    position:                       absolute;
-    left:                           0;
-    top:                            25%;
-    width:                          100%;
-    text-align:                     center;
-    color:                          #000;
+li a{
+    display:            block;
+    color:              white;
+    text-align:         center;
+    padding:            14px 16px;
+    text-decoration:    none;
 }
-.caption span.border{
-    background-color:               #111;
-    color:                          #fff;
-    padding:                        18px;
-    font-size:                      25px;
-    letter-spacing:                 10px;;
+li a:hover{
+    background-color:   #111;
 }
-@media only screen and (max-width: 500px){
-    ul{
-        flex-direction:                 column;
-    }
-    li{
-        margin:                         0;
-    }
-    a{
-        display:                        block;
-    }
-    button{
-        display:                        block;
-        padding:                        2vw;
-        font-size:                      3vh;
-        background-color:               #AFE0FF;
-        border:                         none;
-        outline:                        none;
-        cursor:                         pointer;
-        align-self:                     flex-start;
-    }
-}
-.about_header{
-    font-family:                    comic sans ms, cursive, sans-serif;
-    position:                       absolute;
-    top:                            600px;
-    left:                           20%;
-    color:                          black;
-    width:                          200px;
-    font-size:                      10px;
-}
-.about_me{
-    font-family:                    comic sans ms, cursive, sans-serif;
-    position:                       absolute;
-    top:                            650px;
-    left:                           2%;
-}
-
-@media screen and (min-width: 601px){
-    .about_header{
-        font-size:                      12px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .about_header{
-        font-size:                      20px;
-    }
 }
