@@ -44,7 +44,7 @@ void userInfo(char *usernamePtr, char *passwordPtr){
     
     char *server = "localhost";
     char *user = "root";
-    char *password = "Gunsaredangerous";
+    char *password = "";
     char *database = "virtual_diary";
 
     if (conn == NULL) {
@@ -61,7 +61,7 @@ void createUser(int *loginPtr, char *usernamePtr, char *passwordPtr){
     MYSQL* conn = mysql_init(NULL);
     char* server = "localhost";
     char* user = "root";
-    char* serverP = "Gunsaredangerous";
+    char* serverP = "";
     char* database = "virtual_diary";
     char* result;
     char* res;
@@ -108,7 +108,7 @@ void login(int *loginPtr, char *usernamePtr, char *passwordPtr, int *userIDPtr){
     MYSQL_RES* result;
     char* server = "localhost";
     char* user = "root";
-    char* serverP = "Gunsaredangerous";
+    char* serverP = "";
     char* database = "virtual_diary";  
     char* res;
     // To Here
@@ -374,7 +374,7 @@ void addEntry(char* userIDPtr) {
     char* res;
     char* server = "localhost";
     char* user = "root";
-    char* serverP = "Gunsaredangerous";
+    char* serverP = "";
     char* database = "virtual_diary";    
 
     time_t t = time(NULL);
